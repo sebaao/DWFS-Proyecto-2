@@ -1,0 +1,262 @@
+/* Estilos para dispositivos móviles (hasta 767px de ancho) */
+@media only screen and (min-width: 767px) {
+
+
+
+
+/* Tamaño de fuente de las entradas a 1rem unidad relativa, equivale al tamaño por defecto del navegador, 2rem = 18px * 2  */
+.form_input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 100px;
+    font-size: 1rem;
+    border-radius: 100px;
+    border-width: 0.1px;
+    border: 1px solid #ccc; /* Borde del campo de entrada */
+}
+
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    
+}
+
+/* Navbar */
+.container-fluid {
+    margin-top: 1px;
+    
+}
+
+.nav-link:hover {
+    color: #fdfdfd !important;
+}
+
+.nav-link {
+    color: #000000 !important;
+}
+
+.navbar {
+    background-color: #ffffff !important;
+}
+
+.navbar-toggler {
+    line-height: 0;
+    color: #000000 !important;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+/* Estilos del footer */
+.footer {
+    
+    position: relative;
+    background-image: url('img/footer.png');
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 250px; 
+   
+}
+
+.footer-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+
+}
+
+
+.social-icons {
+    justify-content: center; 
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; 
+}
+
+.col-md-4 h4 {
+    margin-bottom: 20px;
+}
+
+
+/* Estilos URLs*/
+a {
+    color: #ffffff; 
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0267ff; /* Color al pasar el mouse */
+}
+
+
+body, button, input {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ffffff;
+}
+
+/* La clase container estará centrada, que es el contenedor "padre" de todo el formulario */
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
+}
+
+
+.Table_Title {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.inventario{
+    display: flex;
+    margin: 10px 0;   
+}
+
+
+
+
+/* Estilos al botón "padre" o en general  */
+.button {
+    padding: 4px 4px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+   
+}
+
+/* efecto al pasar el mouse sobre el botón, crece 1.2  */
+.button:hover{
+    scale: 110%;
+    transition: 0.2s;
+}
+
+
+
+/* Estilos especificos a "botón "primary" pero conserva propiedades del botón general "padre" */
+.button--primary {
+    background-color: rgb(0, 0, 217);
+    color: #d0f9fa;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Estilos especificos a "botón "secundary" que se crean automaticamente en la celda "acciones"*/
+.button--secundary {
+    background-color: #00928b;
+    color: #ffffff;
+}
+
+/* Estilos especificos a "botón "terciary" que se crean automaticamente en la celda "acciones"*/
+.button--terciary {
+    background-color: #ff0019;
+    color: #f0f0f0;
+}
+
+/* Estilos a la tabla del Crud */
+.viewtable{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ffffff;
+    width: 1fr;
+    justify-content: center;
+
+}
+
+.table_header, .table_body td {
+    border: 1px solid #bababa93;
+    padding: 10px;
+    border-radius: 5px;
+
+
+}
+
+.table_header {
+    background-color: #000000;
+    color: white;
+}
+
+
+/* Estilos específicos para los botones dentro de la cuarta celda */
+.table_body td:nth-child(4) button {
+    margin: 0 10px; /* Espacio entre los botones */
+    padding: 8px 15px; /* Ajustar el padding para que los botones sean más grandes */
+}
+
+/* Estilos específicos para el botón primario en la cuarta celda */
+.table_body td:nth-child(4) .button--primary {
+    background-color: #007bff; /* Cambiar el color del botón primario */
+    color: #fff; /* Texto en color blanco */
+}
+
+/* Estilos específicos para el botón secundario en la cuarta celda */
+.table_body td:nth-child(4) .button--secundary {
+    background-color: #28a745; /* Cambiar el color del botón secundario */
+    color: #fff; /* Texto en color blanco */
+}
+
+/* Estilos específicos para el botón terciario en la cuarta celda */
+.table_body td:nth-child(4) .button--terciary {
+    background-color: #dc3545; /* Cambiar el color del botón terciario */
+    color: #fff; /* Texto en color blanco */
+}
+
+
+
+
+
+/* Estilos para dispositivos móviles (hasta 767px de ancho) */
+@media only screen and (max-width: 767px) {
+ 
+/* Estilos para la clase .form_input */
+.form_input {
+
+    width: 100%; /* Opcional: asegura que los campos de entrada ocupen todo el ancho disponible */
+    padding: 12px; /* Espaciado interno de los campos de entrada */
+    font-size: 1rem; /* Tamaño de fuente de los campos de entrada */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde del campo de entrada */
+}
+
+/* Estilos para el texto del placeholder */
+.form_input::placeholder {
+    font-size: 0.9rem; /* Tamaño del texto del placeholder */
+}
+
+
+}
+
+
+
+
